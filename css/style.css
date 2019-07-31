@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700&display=swap');
+body {
+    overflow-x: hidden;
+    }
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #67c2d4 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #67c2d4 !important;
+  }
+}
+
+h1 {
+  letter-spacing: 8px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+html,
+body,
+header,
+}
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #67c2d4 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #67c2d4 !important;
+  }
+}
+.texto-conectando{
+  font-size: 86px;
+  color:#fef0e3;
+}
+.texto-tecnologia{
+   color:#fef0e3;
+}
+h1 {
+  letter-spacing: 8px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #e75854;
+  width: 80px;
+}
+
+.display-3, .display-4 , .icone , .footer-copyright, .topo {
+  color:#553445;
+}
+.titulo{
+font-size: 50px;
+}
+.estilo-rodape{
+background: #67c2d4;
+}

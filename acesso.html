@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Template TCC ">
+	<meta name="author" content="Daniel C Rubens">
+	<title>Connect Vidas</title>
+	<link rel="icon" type="image/ico" href="assest/dev.png">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/mdb.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+</head>
+<body>
+	<header>
+		<!--Navbar-->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top  scrolling-navbar">
+			<div class="container">
+				<a class="navbar-brand " href="index.html"><strong><i class="fab fa-connectdevelop fa-2x icone"></i></strong></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Sair </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"href="#ideia"data-toggle="modal" data-target="#alterarconta" onclick="$('#home').animatescroll({scrollSpeed: 3000,easing:'easeInOutBack'});">Alterar Conta<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"  class="" data-toggle="modal" data-target="#listarjovem">Listar Jovens</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href=""data-toggle="modal" data-target="#cadastrojovem">Cadastro Jovem</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Navbar -->
+		<!-- Full Page Intro -->
+		<div class="view um" style="">
+			<!-- Mask & flexbox options-->
+			<div class="mask rgba-black-light align-items-center"style="background:#67c2d4;">
+				<!-- Content -->
+				<div class="container">
+					<!--Grid row-->
+					<div class="row">
+					</div>				
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+	
+		<!-- Modal listar jovem -->
+		<div class="modal fade" id="listarjovem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-fluid modal-full-height modal-bottom" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Lista de Jovens</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<table class="table table-striped">
+						<thead class="container">
+							<tr>
+								<th scope="col-sm-4 "><strong>#</strong></th>
+								<th scope="col-sm-5"> <strong>Nome</strong></th>
+								<th scope="col"><strong>Data nascimento</strong></th>
+								<th scope="col"><strong>Sexo</strong></th>
+								<th scope="col"><strong>CPF</strong></th>
+								<th scope="col"><strong>Idade</strong></th>
+								<th scope="col"><strong>Nome instituição</strong></th>
+								<th scope="col"><strong>Opções</strong></th>
+
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>João</td>
+								<td>04/04/93</td>
+								<td>masc</td>
+								<td>56421178656</td>
+								<td>26</td>
+								<td>Vale</td>
+								<td><i class="fas fa-edit"></i> <i class="fas fa-trash-alt ml-4"></i></td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Maria</td>
+								<td>09/06/97</td>
+								<td>fem</td>
+								<td>98521178432</td>
+								<td>22</td>
+								<td>Refugio</td>
+								<td><i class="fas fa-edit"></i> <i class="fas fa-trash-alt ml-4"></i></td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Caio</td>
+								<td>09/12/99</td>
+								<td>masc</td>
+								<td>65981178221</td>
+								<td>20</td>
+								<td>Vale</td>
+								<td><i class="fas fa-edit"></i> <i class="fas fa-trash-alt ml-4"></i></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- Modal cadastro jovem -->
+						<div class="modal fade" id="cadastrojovem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+						aria-hidden="true">
+						<div class="modal-dialog modal-lg" role="document">
+							<div class="modal-content">
+								<div class="modal">
+									<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-6">
+											<div class="md-form form-sm mb-5">
+												<input type="email" id="" class="form-control form-control-sm validate">
+												<label data-error="wrong" data-success="right" for="modalLRInput12">
+													Nome 
+												</label>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="md-form form-sm mb-5">
+												<input type="date" id="modalLRInput13" class="form-control form-control-sm validate">
+												<label data-error="wrong" data-success="right" for="modalLRInput13">Data nascimento</label>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-6">
+											<div class="md-form form-sm mb-5">
+												<input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+												<label data-error="wrong" data-success="right" for="modalLRInput12">Sexo</label>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="md-form form-sm mb-5">
+												<input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+												<label data-error="wrong" data-success="right" for="modalLRInput13">
+												CPF</label>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-6">
+											<div class="md-form form-sm mb-5">
+												<input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+												<label data-error="wrong" data-success="right" for="modalLRInput12">Idade</label>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="md-form form-sm mb-5">
+												<input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+												<label data-error="wrong" data-success="right" for="modalLRInput13">Nome instituição</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class=" col-8">
+
+									<button type="button" class="btn btn btn-default  text-center float-right btn-lg btn-cadastrar">Cadastrar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal fade" id="alterarconta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-fluid modal-full-height modal-bottom" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Altere seu Cadastro</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<table class="table table-striped">
+						<thead class="container">
+							<tr>
+								<th scope="col-sm-4 "><strong>#</strong></th>
+								<th scope="col-sm-5"> <strong>Nome</strong></th>
+								<th scope="col"><strong>Email</strong></th>
+								<th scope="col"><strong>Endereço</strong></th>
+								<th scope="col"><strong>CNPJ</strong></th>
+								<th scope="col"><strong>Cidade</strong></th>
+								<th scope="col"><strong>Telefone </strong></th>
+								<th scope="col"><strong>Login</strong></th>
+								<th scope="col"><strong>Opção</strong></th>
+
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Vale</td>
+								<td>vale@gmail.com.br</td>
+								<td>rua bom pastor</td>
+								<td>32.358.1820/001-63</td>
+								<td>Sorocaba</td>
+								<td>15996561043</td>
+								<td>Vale</td>
+								<td><i class="fas fa-edit"></i> <i class="fas fa-trash-alt ml-4"></i></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/mdb.js"></script>
+<script src="js/style.js"></script>
+<script src="js/animatescroll.js"> </script>
+
+<script>new WOW().init();</script>
+</body>
+</html>
+
+
+
+
+
+
+
